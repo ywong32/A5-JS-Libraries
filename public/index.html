@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META DATA-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS RESET-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+    <!--EXTERNAL glide CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/glide.core.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/glide.theme.min.css"/>
+
+    <!--EXTERNAL AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- bring in the google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100;300;500;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--TITLE-->
+    <title>INM 420 JS Libraries</title>
+</head>
+
+<body>
+    <!---------------------- granim head bar --------------------------->
+    <canvas id="canvas-basic"></canvas>
+
+    <!-------------------------- hearder ------------------------------->
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <a href=""><img src="/assets/img/logo_elevate.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#container-living">LIVING ROOM</a></li>
+                    <li><a href="#container-dining">DINING ROOM</a></li>
+                    <li><a href="#container-bed">BEDROOM</a></li>
+                    <li><a href="">OFFICE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-------------------------- living room ------------------------------->
+        <div id="container-living" class="container-living" data-aos="fade-right" data-tilt data-tilt-perspective="2000">
+            <p class="title-living">LIVING ROOM</p>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="/assets/img/living_1.jpg" alt="white sofa"></li>
+                    <li class="glide__slide"><img src="/assets/img/living_2.jpg" alt="brown sofa"></li>
+                    <li class="glide__slide"><img src="/assets/img/living_3.jpg" alt="light brown sofa"></li>
+                    <li class="glide__slide"><img src="/assets/img/living_4.jpg" alt="grey sofa"></li>
+                </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+
+    <!-------------------------- dining room ------------------------------->
+        <div id="container-dining" class="container-dining" data-tilt data-tilt-perspective="2000">
+            <p class="title-dining" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-delay="10">DINING ROOM</p>
+            <div class="glide2" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in" data-aos-delay="10">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="/assets/img/dining_1.jpg" alt="wood dinette table"></li>
+                    <li class="glide__slide"><img src="/assets/img/dining_2.jpg" alt="extendable dinette table"></li>
+                    <li class="glide__slide"><img src="/assets/img/dining_3.jpg" alt="woss dining table"></li>
+                    <li class="glide__slide"><img src="/assets/img/dining_4.jpg" alt="extendable dining table"></li>
+                </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+    <!-------------------------- bedroom ------------------------------->
+        <div id="container-bed" class="container-bed" data-tilt data-tilt-perspective="2000">
+            <p class="title-bed" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-delay="10">BEDROOM</p>
+            <div class="glide3" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in" data-aos-delay="10">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="/assets/img/bed_1.jpg" alt="light grey fabric bed"></li>
+                    <li class="glide__slide"><img src="/assets/img/bed_2.jpg" alt="beige fabric bed"></li>
+                    <li class="glide__slide"><img src="/assets/img/bed_3.jpg" alt="brown wood bed"></li>
+                    <li class="glide__slide"><img src="/assets/img/bed_4.jpg" alt="dark grey fabric bed with storage"></li>
+                </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-------------------------- footer ------------------------------->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href=""><img src="/assets/img/logo_elevate.svg"></a>
+            </div>  
+
+            <div class="footer-social-links">
+                <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+                <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i><span>Youtube</span></a>
+                <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+            </div> 
+            
+            <div id="footer-copyright">
+                &copy; 2024 Elevate - All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- EXTERNAL granim JS -->
+    <script src="./assets/granim.js-2.0.0/dist/granim.min.js"></script>
+    <script src="assets/js/granim-external.js"></script>
+
+    <!-- EXTERNAL glide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="assets/js/glide-external.js"></script>
+
+    <!-- EXTERNAL aos JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos-external.js"></script>
+
+    <!-- EXTERNAL vanilla JS -->
+    <script src="assets/js/vanilla-tilt.js"></script>
+
+    <!-- EXTERNAL fontawesome icon JS -->
+    <script src="https://kit.fontawesome.com/3500deba85.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

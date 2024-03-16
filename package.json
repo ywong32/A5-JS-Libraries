@@ -1,0 +1,16 @@
+{
+  "name": "inm420-a5-js-libraries",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Ying Kit Wong",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "description": ""
+}
